@@ -1,31 +1,9 @@
-body {
-  background-color: #4289f4;
-}
+body { background-color: #4289f4; }
 
-.joke-center {
-  text-align: center;
-  display: flex;
-  margin-top: 20%;
-}
+.joke-center { text-align: center; display: -ms-flexbox; display: flex; margin-top: 20%; }
 
-button {
-  background-color: #4289f4;
-  margin: 0 auto;
-  width: 200px;
-  height: 50px;
-  border: 1px solid #fff;
-  color: #fff;
-  border-radius: 5px;
-  text-transform: uppercase;
-}
+button { background-color: #4289f4; margin: 0 auto; width: 200px; height: 50px; border: 1px solid #fff; color: #fff; border-radius: 5px; text-transform: uppercase; }
 
-.para {
-  padding: 20px;
-}
+.para { padding: 20px; }
 
-p {
-  text-align: center;
-  color: #fff;
-}
-
-/*# sourceMappingURL=style.css.map */
+p { text-align: center; color: #fff; }

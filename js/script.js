@@ -7,14 +7,18 @@ button.addEventListener('click', function() {
 
 getJoke();
 
-var paragraph = document.getElementById('joke');
-
 function getJoke () {
-	var xhr = new XMLHttpRequest();
-	xhr.open('GET', url);
-	xhr.addEventListener('load', function () {
+  var paragraph = document.getElementById('joke');
+    xhr = new XMLHttpRequest();        
+  	xhr.addEventListener('load', function () {
 		var response = JSON.parse(xhr.response);
 		paragraph.innerHTML = response.value.joke;	
 	});
-	xhr.send();
+
+	xhr.onerror = function() { 
+		alert("Not Connected"); 
+	}
+
+ xhr.open("GET", url, true); 
+ xhr.send();
 }
